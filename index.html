@@ -1,11 +1,98 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Ciberseguridad Proactiva | Protege tu Mundo Digital</title>
+    <!-- Enlace al archivo de estilos externo -->
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<h2>Introduccion a GIT</h2>
+
+    <header>
+        <h1>Ciberseguridad Proactiva</h1>
+        <p>Defendiendo tus sistemas, redes y datos contra ataques maliciosos.</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#que-es">¿Qué es?</a></li>
+            <li><a href="#amenazas">Amenazas Comunes</a></li>
+            <li><a href="#buenas-practicas">Prácticas Esenciales</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <section id="que-es">
+            <h2>Definición y Alcance de la Ciberseguridad</h2>
+            <p>La ciberseguridad es la práctica de defender las computadoras, los servidores, los dispositivos móviles, los sistemas electrónicos, las redes y los datos de ataques maliciosos. Su objetivo principal es salvaguardar los sistemas, redes y datos contra accesos indebidos y riesgos en línea. Este enfoque es crucial porque protege la confidencialidad, integridad y disponibilidad de la información, previniendo pérdidas financieras y manteniendo la confianza en un mundo interconectado.</p>
+            
+            <h3>Áreas Clave de Protección</h3>
+            <ul>
+                <li><strong>Seguridad de la Red:</strong> Protección de equipos y dispositivos conectados mediante tecnologías como firewalls y control de acceso a la red.</li>
+                <li><strong>Seguridad de los Datos:</strong> Protege la información tanto en tránsito como en reposo, utilizando medidas como el cifrado y copias de seguridad aisladas para la resistencia operativa.</li>
+                <li><strong>Seguridad en la Nube:</strong> Describe las medidas para proteger datos y aplicaciones que se ejecutan en la nube, importante para el cumplimiento de la normativa de privacidad de datos.</li>
+                <li><strong>Seguridad de los Puntos de Conexión:</strong> Aborda los riesgos que surgen cuando los usuarios acceden remotamente a la red de una organización.</li>
+            </ul>
+        </section>
+
+        <section id="amenazas">
+            <h2>Amenazas Comunes en el Panorama Digital</h2>
+            <p>A medida que avanza la tecnología, también lo hacen las estrategias de los ciberdelincuentes. Es fundamental estar al tanto de los tipos de ataques más frecuentes:</p>
+            <ul>
+                <li><strong>Malware:</strong> Programas maliciosos (virus, gusanos, spyware) diseñados para dañar sistemas o robar datos.</li>
+                <li><strong>Phishing:</strong> Intentos de engaño para obtener información sensible (como contraseñas) a través de comunicaciones fraudulentas. Las campañas de phishing se intensifican en épocas específicas.</li>
+                <li><strong>Ransomware:</strong> Software que bloquea el acceso a sistemas o datos hasta que se paga un rescate. Su actividad ha mostrado un claro incremento en los últimos años.</li>
+                <li><strong>Ataques de IA:</strong> La inteligencia artificial generativa ha introducido un nuevo escenario de amenazas que se explota mediante métodos como la inyección de instrucciones.</li>
+            </ul>
+        </section>
+
+        <section id="buenas-practicas">
+            <h2>Mejores Prácticas de Protección Digital</h2>
+            <p>Adoptar una cultura de seguridad digital puede mitigar significativamente los riesgos. La educación del usuario final es clave, ya que las personas suelen ser la primera línea de defensa:</p>
+            <ul>
+                <li>Usa contraseñas fuertes y únicas, o utiliza un gestor/administrador de contraseñas.</li>
+                <li>Implementa la autenticación de dos factores (2FA) para mayor seguridad.</li>
+                <li>Mantén tu software y sistema operativo actualizados para evitar vulnerabilidades.</li>
+                <li>Sé cauteloso con correos, enlaces y mensajes sospechosos para prevenir el phishing y el malware.</li>
+                <li>Evita conectarte a redes de Wi-Fi abiertas si vas a ingresar información sensible (como datos bancarios o contraseñas).</li>
+                <li>Fomenta una cultura de concientización sobre la seguridad en toda la organización.</li>
+            </ul>
+        </section>
+        
+        <section id="contacto">
+            <h2>Contáctanos y Refuerza tu Seguridad</h2>
+            <p>¿Tienes dudas o necesitas asesoría personalizada en ciberseguridad? Rellena el formulario y nuestro equipo te contactará a la brevedad.</p>
+            
+            <!-- Formulario Funcional (La acción de envío requiere un script de backend para procesar los datos) -->
+            <form action="#" method="POST" class="formulario-contacto">
+                <label for="nombre">Nombre Completo:</label>
+                <input type="text" id="nombre" name="nombre" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="tema">Tema de Interés:</label>
+                <select id="tema" name="tema">
+                    <option value="consulta">Consulta General</option>
+                    <option value="brechas">Gestión de Incidentes</option>
+                    <option value="formacion">Capacitación y Concienciación</option>
+                    <option value="infraestructura">Seguridad de Infraestructura</option>
+                </select>
+
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
+
+                <button type="submit">Enviar Solicitud</button>
+            </form>
+            <p class="nota-funcionalidad"><em>El atributo 'action="#"' en el formulario está configurado para simular un envío sin recargar la página; un entorno de producción requeriría un script de servidor para procesar los datos.</em></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Ciberseguridad Proactiva. Todos los derechos reservados. | Desarrollado con HTML5 y CSS3.</p>
+    </footer>
+
 </body>
 </html>
