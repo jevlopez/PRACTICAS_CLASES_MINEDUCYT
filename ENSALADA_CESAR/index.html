@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receta: Ensalada César Clásica</title>
+    
+    <!-- ********* INICIO DE ESTILOS CSS3 ********* -->
+    <style>
+        /* Estilos generales y reseteo básico */
+        body {
+            font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4; 
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Contenedor principal para centrar el contenido */
+        main {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 30px;
+            background-color: #fff; 
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); 
+            border-radius: 8px;
+        }
+
+        /* Encabezado de la página */
+        header {
+            text-align: center;
+            padding-bottom: 20px;
+            border-bottom: 3px solid #4CAF50; 
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            color: #2c3e50; 
+            font-size: 2.5em;
+            margin-bottom: 5px;
+        }
+
+        header p {
+            color: #7f8c8d;
+            font-style: italic;
+        }
+
+        /* ********* NUEVO ESTILO CSS PARA LA IMAGEN DE LA RECETA ********* */
+        .receta-imagen {
+            text-align: center;
+            margin: 0 auto 30px auto; /* Centrar y añadir espacio debajo */
+            max-width: 100%; /* Asegura que no desborde el contenedor */
+            overflow: hidden; /* Limpia cualquier flotación */
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .receta-imagen img {
+            max-width: 100%; /* La imagen será responsiva */
+            height: auto;
+            display: block;
+        }
+        /* *************************************************************** */
+        
+        /* Estilos para las secciones de la receta */
+        section {
+            margin-bottom: 40px;
+            padding: 20px;
+            border-left: 5px solid #4CAF50;
+            background-color: #f9f9f9;
+            border-radius: 4px;
+        }
+
+        section h2 {
+            color: #4CAF50;
+            border-bottom: 2px solid #ddd;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        
+        /* Estilo para el Tiempo de Preparación (<dl>) */
+        #tiempo-preparacion dl {
+            display: flex;
+            flex-wrap: wrap;
+            margin: 0;
+            padding: 0;
+        }
+
+        #tiempo-preparacion dt {
+            font-weight: bold;
+            color: #2c3e50;
+            width: 50%;
+            padding: 5px 0;
+        }
+
+        #tiempo-preparacion dd {
+            margin-left: 0;
+            width: 50%;
+            padding: 5px 0;
+        }
+
+        /* Estilo para Ingredientes y Nutrición (<ul>) */
+        #ingredientes ul, #nutricion ul {
+            list-style: square;
+            padding-left: 20px;
+        }
+        
+        #ingredientes h3 {
+            color: #34495e;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        /* Estilo para Instrucciones (<ol>) */
+        #instrucciones ol {
+            counter-reset: step-counter;
+            list-style: none;
+            padding: 0;
+        }
+
+        #instrucciones li {
+            margin-bottom: 15px;
+            padding-left: 30px;
+            position: relative;
+        }
+
+        /* Creación de los círculos numerados con pseudoelementos */
+        #instrucciones li:before {
+            content: counter(step-counter);
+            counter-increment: step-counter;
+            background-color: #4CAF50;
+            color: white;
+            width: 25px;
+            height: 25px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        /* Pie de página */
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 30px;
+            border-top: 1px solid #ccc;
+            font-size: 0.8em;
+            color: #7f8c8d;
+        }
+    </style>
+    <!-- ********* FIN DE ESTILOS CSS3 ********* -->
+</head>
+<body>
+
+    <!-- El <header> contiene la información introductoria de la página. -->
+    <header>
+        <h1>Receta: Ensalada César Clásica</h1>
+        <p>Una de las ensaladas más famosas del mundo. Fresca, crujiente y llena de sabor.</p>
+    </header>
+    
+    <!-- ********* INSERCIÓN DE LA IMAGEN ********* -->
+    <div class="receta-imagen">
+        <img src="https://images.aws.nestle.recipes/resized/69e14ff7a1b1fea5d3976defa9d4903a_CPK_cesar_a-hero_1200_628.jpg">
+    </div>
+    <!-- **************************************** -->
+
+    <!-- <main> es el contenedor principal del contenido único de la página. -->
+    <main>
+        <!-- <article> encapsula un componente de contenido independiente, en este caso, la receta completa. -->
+        <article>
+            
+            <!-- 1. Tiempo de Preparación -->
+            <section id="tiempo-preparacion">
+                <h2>Tiempo de Preparación</h2>
+                <dl>
+                    <dt>Preparación:</dt>
+                    <dd>15 minutos</dd>
+                    <dt>Cocción de crutones (opcional):</dt>
+                    <dd>10 minutos</dd>
+                    <dt>Total:</dt>
+                    <dd>25 minutos</dd>
+                    <dt>Raciones:</dt>
+                    <dd>4 porciones</dd>
+                </dl>
+            </section>
+
+            <!-- 2. Ingredientes -->
+            <section id="ingredientes">
+                <h2>Ingredientes</h2>
+                <h3>Para la Ensalada</h3>
+                <ul>
+                    <li>1 lechuga romana grande, troceada</li>
+                    <li>2 tazas de crutones (pan tostado)</li>
+                    <li>½ taza de queso parmesano rallado</li>
+                    <li>Pimienta negra recién molida</li>
+                </ul>
+                <h3>Para el Aderezo (Vinagreta)</h3>
+                <ul>
+                    <li>2 dientes de ajo picados finamente</li>
+                    <li>2 anchoas (opcional, para sabor umami)</li>
+                    <li>1 yema de huevo grande</li>
+                    <li>1 cucharada de jugo de limón fresco</li>
+                    <li>1 cucharadita de mostaza Dijon</li>
+                    <li>½ taza de aceite de oliva extra virgen</li>
+                    <li>Sal y pimienta al gusto</li>
+                </ul>
+            </section>
+
+            <!-- 3. Instrucciones -->
+            <section id="instrucciones">
+                <h2>Instrucciones</h2>
+                <ol>
+                    <li><strong>Prepara el Aderezo:</strong> En un tazón pequeño, mezcla el ajo picado, las anchoas (si las usas), la yema de huevo, el jugo de limón y la mostaza Dijon. Bate vigorosamente.</li>
+                    <li><strong>Emulsiona:</strong> Mientras sigues batiendo, agrega lentamente el aceite de oliva en un chorro fino hasta que el aderezo espese y emulsione. Sazona con sal y pimienta.</li>
+                    <li><strong>Arma la Ensalada:</strong> En un bol grande, coloca la lechuga romana y vierte el aderezo sobre ella. Mezcla suavemente hasta que todas las hojas estén cubiertas.</li>
+                    <li><strong>Finaliza:</strong> Agrega los crutones y el queso parmesano. Mezcla una última vez de forma rápida para que los crutones no se ablanden. Sirve inmediatamente.</li>
+                </ol>
+            </section>
+
+            <!-- 4. Nutrición -->
+            <section id="nutricion">
+                <h2>Información Nutricional</h2>
+                <p>Valores aproximados por porción (sin proteína adicional como pollo):</p>
+                <ul>
+                    <li><strong>Calorías:</strong> 380 kcal</li>
+                    <li><strong>Grasa Total:</strong> 35g</li>
+                    <li><strong>Sodio:</strong> 450 mg</li>
+                    <li><strong>Carbohidratos:</strong> 12g</li>
+                    <li><strong>Proteína:</strong> 8g</li>
+                </ul>
+            </section>
+
+        </article>
+    </main>
+
+    <!-- El <footer> contiene la información de pie de página o créditos. -->
+    <footer>
+        <p>&copy; 2026 Recetas Clásicas. Todos los derechos reservados.</p>
+    </footer>
+
+</body>
+</html> 
