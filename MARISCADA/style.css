@@ -1,0 +1,171 @@
+/* Estilos globales y reseteo */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #F8F8FF; /* Fondo Blanco Azulado Suave */
+    color: #4A4A4A; /* Gris oscuro para el texto base */
+    line-height: 1.6;
+}
+
+/* Contenedor principal centrado */
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #FFFFFF;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+}
+
+/* ------------------------------------- */
+/* Centrado de Imagen */
+/* ------------------------------------- */
+
+/* Centra el elemento figure */
+figure {
+    text-align: center; 
+    margin: 20px 0;
+    padding: 10px;
+    border-bottom: 2px solid #FF4500; /* Línea de acento llamativa */
+}
+
+/* Hace la imagen responsiva y le da un aspecto moderno */
+figure img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: block; /* Asegura que la imagen se pueda centrar */
+    margin: 0 auto; /* Centra la imagen dentro de su contenedor figure */
+}
+
+/* ------------------------------------- */
+/* Colores Llamativos para el Texto */
+/* ------------------------------------- */
+
+/* Título principal (h1) */
+.title {
+    color: #FF4500; /* Naranja Intenso y Llamativo */
+    font-size: 2.5em;
+    text-align: center;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+}
+
+/* Subtítulos (h3) */
+.subtitle, .preparation-time h3 {
+    color: #191970; /* Azul Marino Profundo (contraste fuerte) */
+    font-size: 1.8em;
+    border-left: 5px solid #00CED1; /* Cian Turquesa como acento */
+    padding-left: 10px;
+    margin-top: 30px;
+}
+
+/* Párrafos */
+.paragrahp {
+    font-size: 1.1em;
+    color: #333;
+}
+
+/* Texto resaltado (strong) */
+strong {
+    color: #FF4500; /* El mismo naranja intenso para destacar la información clave */
+    font-weight: bold;
+}
+
+/* ------------------------------------- */
+/* Estilos de Secciones y Listas */
+/* ------------------------------------- */
+
+/* Estilos de las secciones de lista (Tiempo de Preparación e Ingredientes) */
+.preparation-time ul, .container-ingredients ul {
+    list-style-type: none; /* Quitamos el estilo de punto predeterminado */
+    padding-left: 0;
+}
+
+/* Estilo para cada ítem de lista desordenada */
+.preparation-time li, .container-ingredients li {
+    padding: 8px 0 8px 25px;
+    position: relative;
+    border-bottom: 1px dashed #E0E0E0;
+}
+
+/* Añade un icono de punto (o corazón/diamante, etc.) llamativo a las listas */
+.preparation-time li::before, .container-ingredients li::before {
+    content: "🐟"; /* Icono de pez para la lista */
+    position: absolute;
+    left: 0;
+    color: #00CED1;
+    font-size: 1.2em;
+}
+
+/* Estilos para las instrucciones (lista ordenada) */
+.container-instructions ol {
+    list-style: none;
+    counter-reset: step-counter;
+    padding-left: 0;
+}
+
+.container-instructions li {
+    margin-bottom: 20px;
+    padding-left: 45px;
+    position: relative;
+    border-bottom: 1px solid #FFDAB9; /* Melocotón Suave */
+    padding-bottom: 10px;
+}
+
+/* Número de paso llamativo */
+.container-instructions li::before {
+    content: counter(step-counter);
+    counter-increment: step-counter;
+    background-color: #FF4500; /* Fondo naranja */
+    color: white;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* ------------------------------------- */
+/* Estilos de Tabla Nutricional */
+/* ------------------------------------- */
+
+.container-nutrition table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.container-nutrition td {
+    padding: 12px;
+    border: 1px solid #E0E0E0;
+    vertical-align: top;
+}
+
+/* Primera columna (títulos de valores nutricionales) */
+.container-nutrition td:first-child {
+    font-weight: bold;
+    background-color: #E0FFFF; /* Turquesa muy claro */
+    width: 25%;
+    color: #191970;
+}
+
+/* Celda de contenido */
+.celda {
+    background-color: #FDF5E6; /* Blanco Antiguo muy claro */
+}
+
+/* Separadores */
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), #00CED1, rgba(0, 0, 0, 0));
+} 
